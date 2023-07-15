@@ -1,16 +1,33 @@
-.nav{
+/* font family work sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800&display=swap');
+
+* {
+    padding: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.nav-manu{
+
+.nav-manu {
     display: flex;
 }
 
-a{
+
+a {
     text-decoration: none;
     margin-left: 10px;
 }
-li{
+
+li {
     list-style: none;
+}
+
+li a {
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
 }
