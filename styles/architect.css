@@ -90,7 +90,6 @@ main {
 .quick-feature-container {
     display: flex;
     gap: 50px;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -146,8 +145,20 @@ main {
         margin: 10px;
         text-align: center;
     }
+    /* this is for main */
+    main{
+        margin: 30px 10px;
+    }
+    .quick-feature-container{
+        flex-direction: column;
+    }
+    .image-container {
+        grid-template-columns: 1fr;
+    }
 }
 
+
+/* for medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     nav {
         padding: 30px;
@@ -156,5 +167,11 @@ main {
     .banner-contant {
         margin: 30px 100px 0 100px;
         text-align: center;
+    }
+    .quick-feature-container{
+        flex-direction: column;
+    }
+    main {
+        margin: 30px 100px;
     }
 }
