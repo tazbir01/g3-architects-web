@@ -14,15 +14,16 @@
     font-size: .8rem;
     font-weight: 400;
 }
-.btn-primary{
-    border-radius: 8px;
-background: #FF900E;
-color: #FFF;
-font-size: .9rem;
-font-weight: 500;
-padding: 20px 24px;
-border: 0;
-margin: 25px 0;
+
+.btn-primary {
+    border-radius: 5px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 18px 20px;
+    border: 0;
+    margin: 25px 0;
 }
 
 /* header section start*/
@@ -60,10 +61,11 @@ nav {
 }
 
 /* style banner */
-.banner-contant{
+.banner-contant {
     margin: 50px 150px 0 150px;
     text-align: center;
 }
+
 .banner-title {
     color: #131313;
     text-align: center;
@@ -71,11 +73,57 @@ nav {
     font-weight: 700;
     margin-bottom: 10px;
 }
-/* #banner-description{
-    text-align: center;
-} */
+
 .banner-img {
     width: 100%;
+}
+
+/* this is for main secton */
+
+main {
+
+    margin: 50px 200px;
+}
+
+/* quick-feature section */
+
+.quick-feature-container {
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.word-1 {
+    color: #727272;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.word-2 {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.word-3 {
+    color: #FF900E;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.quick-feature-title{
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    height: 250px;
+    width: 250px;
+}
+
+.image-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* media query */
@@ -84,15 +132,29 @@ nav {
     nav {
         padding: 10px;
     }
-    .nav-bar{
+
+    .nav-bar {
         flex-direction: column;
         margin-top: 20px;
     }
-    .nav-manu{
+
+    .nav-manu {
         margin-top: 30px
     }
-    .banner-contant{
+
+    .banner-contant {
         margin: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav {
+        padding: 30px;
+    }
+
+    .banner-contant {
+        margin: 30px 100px 0 100px;
         text-align: center;
     }
 }
